@@ -1,7 +1,10 @@
 // Mensajes que se mostrarán en el botón "No"
 var noClickCount = 0;
 var noMessages = [
-  "Segura?"
+  "En serio?",
+  "Y si insisto?",
+  "Se me acaban los mensajes...",
+  "si?"
 ];
 
 function selectOption(option) {
@@ -11,7 +14,7 @@ function selectOption(option) {
       displayCatHeart(); // Mostrar imagen
 
       // Mostrar mensaje con la fuente Sacramento
-      displayMessage("Confirmado!");
+      displayMessage("Súper!");
     });
   } else if (option === "no") {
     if (noClickCount < noMessages.length) {
