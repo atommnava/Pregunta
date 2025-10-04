@@ -1,17 +1,7 @@
 // Mensajes que se mostrarán en el botón "No"
 var noClickCount = 0;
 var noMessages = [
-  "Te amo 3000000:)",
-  "Querida, por favor",
-  "Vamos pastelito :(",
-  "Segura?",
-  "De verdad, piénsalo bien...",
-  "Última oportunidad 💔",
-  ":(((((",
-  "Me moriréee!",
-  "Me morí x_x",
-  "M_E_G_U_S_T_A_S",
-  "Noooo ;("
+  "Segura?"
 ];
 
 function selectOption(option) {
@@ -21,7 +11,7 @@ function selectOption(option) {
       displayCatHeart(); // Mostrar imagen
 
       // Mostrar mensaje con la fuente Sacramento
-      displayMessage("Awww, TEAMO PASTELITO! Sabía que dirías que sí :)");
+      displayMessage("Confirmado!");
     });
   } else if (option === "no") {
     if (noClickCount < noMessages.length) {
@@ -55,7 +45,7 @@ function flashRainbowColors(callback) {
 function displayCat() {
   var imageContainer = document.getElementById("image-container");
   var catImage = new Image();
-  catImage.src = "cat.gif";
+  catImage.src = "oia-uia.gif";
   catImage.alt = "Cat";
   catImage.onload = function () {
     imageContainer.appendChild(catImage);
@@ -66,7 +56,7 @@ function displayCatHeart() {
   document.getElementById("image-container").innerHTML = "";
   var imageContainer = document.getElementById("image-container");
   var catHeartImage = new Image();
-  catHeartImage.src = "cat-heart.gif";
+  catHeartImage.src = "bambi-GIF.gif";
   catHeartImage.alt = "Cat Heart";
   catHeartImage.onload = function () {
     imageContainer.appendChild(catHeartImage);
